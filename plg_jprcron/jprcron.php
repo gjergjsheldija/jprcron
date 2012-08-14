@@ -119,6 +119,7 @@ class plgSystemJPrCron extends JPlugin {
                             //If it's a plugin...
                             else {
                                 //Construct asn array from the task descriptor:
+
                                 $aryEvent = explode('.', $value->file);
 
                                 //If it's not an array...
@@ -126,16 +127,17 @@ class plgSystemJPrCron extends JPlugin {
                                     //Skip it.
                                 }
                                 //If there are two elements in the array...
-                                elseif (count($aryEvent) == 2) {
+                                elseif (count($aryEvent) == 3) {
                                     //The elements are the plugin group and event names respectively:
-                                    $pluginGroup = $aryEvent[0];
-                                    $pluginEvent = $aryEvent[1];
+                                    $pluginGroup    = $aryEvent[0];
+                                    $pluginName     = $aryEvent[1];
+                                    $pluginEvent    = $aryEvent[2];
 
                                     //Prepare the dispatcher object:
                                     $dispatcher = & JDispatcher::getInstance();
 
                                     //Import plugins for the requested plugin group:
-                                    JPluginHelper::importPlugin($pluginGroup);
+                                    JPluginHelper::importPlugin($pluginGroup, $pluginName);
 
                                     //Fire the requested event:
                                     $dispatcher->trigger($pluginEvent);
@@ -181,3 +183,4 @@ class plgSystemJPrCron extends JPlugin {
     }
 
 }
+
