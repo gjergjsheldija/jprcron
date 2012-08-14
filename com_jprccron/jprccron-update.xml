@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+   <update>
+      <name>JPrcCron</name>
+      <description>JPrcCron Component</description>
+      <element>com_jprccron</element>
+      <type>component</type>
+      <version>2.2.0</version>
+ 
+      <infourl title="JPrcCron URL">http://www.prieco.com</infourl>
+      <downloads>
+         <downloadurl type="full" format="tgz">http://www.prieco.com/update/com_jprccron-2.2.0-final.zip</downloadurl>
+      </downloads>
+      <tags>
+         <tag>cron</tag>
+      </tags>
+ 
+      <maintainer>Prieco S.A.</maintainer>
+      <maintainerurl>http://www.prieco.com</maintainerurl>
+      <section>Utilities</section>
+      <targetplatform name="joomla" version="1.6" />
+   </update> 
+
+</updates>

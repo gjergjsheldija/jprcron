@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+ 
+    <name>COM_JPRCCRON</name>
+    <author>Prieco S.A.</author>
+    <creationDate>May 22, 2012</creationDate>
+    <copyright>(C) 2007 - 2012 Prieco, S.A. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+    <authorEmail>support@prieco.com</authorEmail>
+    <authorUrl>http://www.prieco.com</authorUrl>
+    <version>2.2.0</version>
+    <description>COM_JPRCCRON_DESCRIPTION</description>
+ 
+    <scriptfile>script.php</scriptfile>
+ 
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <media destination="com_jprccron" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+    </media>
+
+    <administration>
+        <menu img="../media/com_jprccron/images/prieco-16x16.png">COM_JPRCCRON_MENU</menu>
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>config.xml</filename>
+            <filename>access.xml</filename>
+            <filename>jprccron.php</filename>
+            <filename>controller.php</filename>
+            
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>            
+            <folder>views</folder>           
+        </files>
+ 
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_jprccron.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_jprccron.sys.ini</language>
+        </languages>
+    </administration>
+ 
+    <updateservers>
+        <server type="extension" priority="1" name="JPrcCron Update Site">http://www.prieco.com/update/jprccron-update.xml</server>
+    </updateservers>
+ 
+</extension>

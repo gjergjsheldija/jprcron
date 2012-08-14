@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.6">
+    <name>Cronjob Scheduler</name>
+    <packagename>jprcron</packagename>
+    <author>Prieco S.A.</author>
+    <creationDate>May 22, 2012</creationDate>
+    <copyright>(C) 2007 - 2012 Prieco, S.A. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+    <authorEmail>support@prieco.com</authorEmail>
+    <authorUrl>http://www.prieco.com</authorUrl>
+    <packager></packager>
+    <packagerurl></packagerurl>
+    <description><![CDATA[
+JPrc Cron is a Joomla package (a component and a plugin) for Cron Jobs Management and Scheduling.
+]]>
+    </description>
+    <files>
+        <file type="" client="component" id="com_jprccron">com_jprccron.zip</file>
+        <file type="" client="plugin" id="plg_jprcron">plg_jprcron.zip</file>
+    </files>
+</extension>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="component"
+                      label="COM_JPRCCRON">
+        <field name="cronenable" type="radio" default="1" label="Enable CRON RUN" description="">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </field>
+
+        <field name="cemail" type="radio" default="0" label="Activate Email Logs" description="">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </field>
+        
+        <field name="email" type="text" default="" label="Send Cron Logs to Email" description="" />
+		
+    </fieldset>
+    
+    <fieldset
+        name="permissions"
+        label="JCONFIG_PERMISSIONS_LABEL"
+        description="JCONFIG_PERMISSIONS_DESC"
+    >
+        <field
+            name="rules"
+            type="rules"
+            label="JCONFIG_PERMISSIONS_LABEL"
+            class="inputbox"
+            validate="rules"
+            filter="rules"
+            component="com_jprccron"
+            section="component"
+		/>
+    </fieldset>    
+</config>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.6" type="plugin" group="system" method="upgrade" >
+    <name>System - JPrCron</name>
+    <author>Prieco S.A.</author>
+    <creationDate>March 10, 2012</creationDate>
+    <copyright>(C) 2007 - 2012 Prieco, S.A. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+    <authorEmail>support@prieco.com</authorEmail>
+    <authorUrl>http://www.prieco.com</authorUrl>
+    <version>2.1</version>
+    <description><![CDATA[
+    JPrc Cron is a Joomla package (a component and a plugin) for Cron Jobs Management and Scheduling.
+    ]]>
+    </description>
+    <files>
+        <filename plugin="jprcron">jprcron.php</filename>
+        <folder>jprcron</folder>
+    </files>
+    <params/>
+</install>
